@@ -1,0 +1,38 @@
+1) 
+
+int ValorAbsoluto (int entero) {
+if (entero < 0)
+entero = -entero;
+else
+return entero;
+}
+------------------------------
+Si el valor es negativo no se devuelve nada. Habría que agregar un "return entero" a la primera sentencia condicional.
+------------------------------
+2)
+
+void Imprime(double valor) {
+double valor;
+cout << valor;
+}
+------------------------------
+
+El parámetro formal NUNCA puede tener el mismo identificador que una variable de la función. Habría que cambiar el nombre de la variable de la función o incluso eliminarla.
+------------------------------
+3)
+
+void Cuadrado (int entero) {
+return entero*entero;
+}
+------------------------------
+Las funciones void no pueden devolver ningún valor. Habría que cambiar el tipo de la función a int.
+------------------------------
+4)
+
+bool EsPositivo(int valor) {
+if (valor > 0)
+return true;
+}
+------------------------------
+Si el valor es negativo no hace nada. Habría que añadir "else return false;"
+------------------------------
